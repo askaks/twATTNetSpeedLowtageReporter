@@ -1,0 +1,51 @@
+{
+    "twitter": {
+        "twitterToken": "4678565304-",
+        "twitterConsumerKey": "",
+        "twitterTokenSecret": "",
+        "twitterConsumerSecret": ""
+    },
+    "SpeedCheckFrequency": "15",
+    "TweetFrequency": 5,
+    "LoggingOn": true,
+    "tweetTo": "@ATTCares",
+    "TweetDailyBatchReport": true,
+    "TweetDailyBatchReportNextTime": "8:00:00",
+    "LiveTweet": false,
+    "contractCost": "57",
+    "contractSpeed": "105",
+    "tweetThresholds": {
+        "5": [
+            "Hey {tweetTo} I'm paying for {contractSpeed}Mb/s but getting {downloadResult}Mbps?!? Seriously?",
+            "WARNING: {tweetTo} \"Lowtage\" i.e. near outage speed in my area: {downloadResult}Mbps (paying for {contractSpeed}Mbps)",
+            "{tweetTo}, I'm getting near outage speeds of {downloadResult}Mbps with a contract of ${contractCost} for {contractSpeed}Mbps",
+            "Lowtage: {downloadResult}Mbps {tweetTo}, can I pretend to pay the ${contractCost} for {contractSpeed}Mbps the way ATT is pretending to provide DSL?"
+        ],
+        "12.5": [
+            "Uhh {tweetTo} for ${contractCost}for {contractSpeed}Mbps I expect better than {downloadResult}Mbps. Fix your network!",
+            "Hey {tweetTo} if I paid ATT \"up to\" ${contractCost} the same way my speed {downloadResult}Mbps is \"up to\" {contractSpeed}Mbps I'd save $$$",
+            "Hey {tweetTo} why am I only getting {downloadResult}Mbps when I pay for {contractSpeed}Mbps? ${contractCost}/mo for this?",
+            "Dear {tweetTo} What if I paid ATT for the speed I get {downloadResult}Mb/s vs my contract speed of {contractSpeed}Mb/s?",
+            "Dear {tweetTo} If I wanted a speed of {downloadResult}Mb/s I wouldn't be shelling out ${contractCost} for {contractSpeed}Mb/s"
+        ],
+        "100": [
+            "Well {tweetTo} I guess {downloadResult}Mb/s is better than nothing, still not worth ${contractCost} when I expect {contractSpeed}Mb/s",
+            "Dear {tweetTo} I suppose {downloadResult}Mb/s beats dial-up, but that's hardly a consolation when I'm paying ${contractCost}/mo for {contractSpeed}Mb/s",
+            "Dear {tweetTo} If I wanted a speed of {downloadResult}Mb/s I'd have opted 4 the cheaper package and not {contractSpeed}Mb/s for ${contractCost}",         
+            "Hey {tweetTo} what if I paid ATT \"up to\" ${contractCost} for getting \"up to\" {contractSpeed}Mb/s (current speed: {downloadResult}Mb/s)."
+        ]
+    },
+    "log": {
+        "type": "csv",
+        "files": {
+            "ping": "pingresults.csv",
+            "speed": "speedrestuls.csv"
+        }
+    },
+    "msgLog": {
+        "type": "txt",
+        "file": {
+            "msg": "TwitterMessages.txt"
+        }
+    }
+}
